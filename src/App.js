@@ -1,14 +1,14 @@
 import React from 'react';
-import PropsComponent from "./03/PropsComponent";
+import LifecycleExample from "./03/LifecycleExample";
 
 
 class App extends React.Component {
     render() {
         return (
-            <PropsComponent
-                name="두잇 리액트"
-            />
-        );
+            <div>
+                <LifecycleExample />
+            </div>
+        )
     }
 }
 
