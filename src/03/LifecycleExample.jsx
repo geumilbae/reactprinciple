@@ -17,6 +17,7 @@ class LifecycleExample extends React.Component {
 
     componentDidMount() {
         console.log('componentDidMount 호출');
+        this.setState({updated: true});
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -34,7 +35,7 @@ class LifecycleExample extends React.Component {
 
     shouldComponentUpdate(nextProps, nextState, nextContext) {
         console.log('shouldComponentUpdate 호출');
-        return true;
+        return false;
     }
 
     render() {
