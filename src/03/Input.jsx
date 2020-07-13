@@ -48,7 +48,7 @@ class Input extends PureComponent {
                     type={type}
                 />
                 {/* errorMessage가 존재할 경우 출력합니다. */}
-                {errorMessage && <sapn className="error">{errorMessage}</sapn>}
+                {errorMessage && <span className="error">{errorMessage}</span>}
             </label>
         );
     }
